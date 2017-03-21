@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:RootElement="http:///schemas/RootElement/_OUf_oLImEeaqv_dN5EUn5g/18" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/RootElement/_OUf_oLImEeaqv_dN5EUn5g/18 hyperscenarios-profile.profile.uml#_OUgmsLImEeaqv_dN5EUn5g">
+  <uml:Model xmi:id="_oytYMLL0EeacLdvZVzjNfQ" name="RootElement">
+    <packagedElement xmi:type="uml:Package" xmi:id="_FA_9cLL2EeacLdvZVzjNfQ" name="Archives">
+      <packagedElement xmi:type="uml:Class" xmi:id="_FA_9cbL2EeacLdvZVzjNfQ" name="Fond">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_FA_9crL2EeacLdvZVzjNfQ" name="archives" type="_FA_9dbL2EeacLdvZVzjNfQ" aggregation="shared">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FA_9c7L2EeacLdvZVzjNfQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FA_9dLL2EeacLdvZVzjNfQ" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_sHUFkNZsEeayIOSRdu3LuA" name="archives" type="_FA_9dbL2EeacLdvZVzjNfQ" aggregation="shared" association="_sHMw0NZsEeayIOSRdu3LuA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5gLkINZsEeayIOSRdu3LuA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5gOAYNZsEeayIOSRdu3LuA" value="*"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_FA_9dbL2EeacLdvZVzjNfQ" name="Archive">
+        <generalization xmi:type="uml:Generalization" xmi:id="_FA_9drL2EeacLdvZVzjNfQ">
+          <general xmi:type="uml:Class" href="hyperscenarios-model.uml#_GPjmoKGwEeab6op2LCrTPA"/>
+        </generalization>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_xOEukNZtEeayIOSRdu3LuA" name="objetArchive" association="_xODgcNZtEeayIOSRdu3LuA">
+          <type xmi:type="uml:Class" href="hyperscenarios-model.uml#_FN_F0LVBEeaHEPjhfGK9HQ"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_FA_9d7L2EeacLdvZVzjNfQ" name="Institution">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_FA_9eLL2EeacLdvZVzjNfQ" name="fond" type="_FA_9cbL2EeacLdvZVzjNfQ" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FA_9ebL2EeacLdvZVzjNfQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FA_9erL2EeacLdvZVzjNfQ" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_s2jKItZsEeayIOSRdu3LuA" name="fonds" type="_FA_9cbL2EeacLdvZVzjNfQ" aggregation="composite" association="_s2ijENZsEeayIOSRdu3LuA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MNUYsNZtEeayIOSRdu3LuA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MNbtcNZtEeayIOSRdu3LuA" value="*"/>
+        </ownedAttribute>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_FBAkgLL2EeacLdvZVzjNfQ" name="Témoignages">
+      <packagedElement xmi:type="uml:Class" xmi:id="_FBAkgbL2EeacLdvZVzjNfQ" name="Temoignage">
+        <generalization xmi:type="uml:Generalization" xmi:id="_FBAkgrL2EeacLdvZVzjNfQ" general="_FA_9dbL2EeacLdvZVzjNfQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_FBAkg7L2EeacLdvZVzjNfQ" name="lieu" type="_FBAkibL2EeacLdvZVzjNfQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_FBAkhLL2EeacLdvZVzjNfQ" name="citoyen" type="_FBAklrL2EeacLdvZVzjNfQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_FBAkhbL2EeacLdvZVzjNfQ" name="lieuCourant" type="_FBAkibL2EeacLdvZVzjNfQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_FBAkhrL2EeacLdvZVzjNfQ" name="type">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_FBAkh7L2EeacLdvZVzjNfQ" name="support">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_FBAkiLL2EeacLdvZVzjNfQ" name="anonyme">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_FBAkibL2EeacLdvZVzjNfQ" name="Lieu">
+        <generalization xmi:type="uml:Generalization" xmi:id="_FBAkirL2EeacLdvZVzjNfQ">
+          <general xmi:type="uml:Class" href="hyperscenarios-model.uml#_IWfBsLIpEeaRaPqCN0LBgA"/>
+        </generalization>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_FBAki7L2EeacLdvZVzjNfQ" name="citoyensDansLeLieu" type="_FBAklrL2EeacLdvZVzjNfQ" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FBAkjLL2EeacLdvZVzjNfQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FBAkjbL2EeacLdvZVzjNfQ" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_FBAkjrL2EeacLdvZVzjNfQ" name="temoignagesDansLeLieu" type="_FBAkgbL2EeacLdvZVzjNfQ" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FBAkj7L2EeacLdvZVzjNfQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FBAkkLL2EeacLdvZVzjNfQ" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_FBAkkbL2EeacLdvZVzjNfQ" name="memoriaux" type="_FBAkrbL2EeacLdvZVzjNfQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FBAkkrL2EeacLdvZVzjNfQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FBAkk7L2EeacLdvZVzjNfQ" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_EGR4wtZwEeayIOSRdu3LuA" name="temoignages" type="_FBAkgbL2EeacLdvZVzjNfQ" association="_EGRRsNZwEeayIOSRdu3LuA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GQ-OsNZwEeayIOSRdu3LuA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GRBSANZwEeayIOSRdu3LuA" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_JSAWw9ZwEeayIOSRdu3LuA" name="memoriaux" type="_FBAkrbL2EeacLdvZVzjNfQ" association="_JSAWwNZwEeayIOSRdu3LuA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LoRqkNZwEeayIOSRdu3LuA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LoSRoNZwEeayIOSRdu3LuA" value="*"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_FBAklLL2EeacLdvZVzjNfQ" name="entreposer">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_FBAklbL2EeacLdvZVzjNfQ" name="temoignages" type="_FBAkgbL2EeacLdvZVzjNfQ"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_FBAklrL2EeacLdvZVzjNfQ" name="Citoyen">
+        <generalization xmi:type="uml:Generalization" xmi:id="_FBAkl7L2EeacLdvZVzjNfQ">
+          <general xmi:type="uml:Class" href="hyperscenarios-model.uml#_F5FnYKGwEeab6op2LCrTPA"/>
+        </generalization>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_FBAkmLL2EeacLdvZVzjNfQ" name="lieuCourant" type="_FBAkibL2EeacLdvZVzjNfQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_TIt9MtZwEeayIOSRdu3LuA" name="temoignages" type="_FBAkgbL2EeacLdvZVzjNfQ" association="_TItWINZwEeayIOSRdu3LuA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VryW4NZwEeayIOSRdu3LuA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VryW4dZwEeayIOSRdu3LuA" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_k5sEcdZwEeayIOSRdu3LuA" name="lieu" type="_FBAkibL2EeacLdvZVzjNfQ" association="_k5rdYNZwEeayIOSRdu3LuA"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_FBAkmbL2EeacLdvZVzjNfQ" name="meParler">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_FBAkmrL2EeacLdvZVzjNfQ" name="citoyen" type="_FBAklrL2EeacLdvZVzjNfQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_FBAkm7L2EeacLdvZVzjNfQ" name="parlerA">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_FBAknLL2EeacLdvZVzjNfQ" name="citoyens" type="_FBAklrL2EeacLdvZVzjNfQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FBAknbL2EeacLdvZVzjNfQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FBAknrL2EeacLdvZVzjNfQ" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_FBAkn7L2EeacLdvZVzjNfQ" name="allerA">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_FBAkoLL2EeacLdvZVzjNfQ" name="lieu" type="_FBAkibL2EeacLdvZVzjNfQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_FBAkobL2EeacLdvZVzjNfQ" name="entrerDans">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_FBAkorL2EeacLdvZVzjNfQ" name="lieu" type="_FBAkibL2EeacLdvZVzjNfQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_FBAko7L2EeacLdvZVzjNfQ" name="saisir">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_FBAkpLL2EeacLdvZVzjNfQ" name="temoignage" type="_FBAkgbL2EeacLdvZVzjNfQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_FBAkpbL2EeacLdvZVzjNfQ" name="lacher">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_FBAkprL2EeacLdvZVzjNfQ" name="temoignage" type="_FBAkgbL2EeacLdvZVzjNfQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_FBAkp7L2EeacLdvZVzjNfQ" name="observer">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_FBAkqLL2EeacLdvZVzjNfQ" name="entite">
+            <type xmi:type="uml:Class" href="hyperscenarios-model.uml#_-bApcJ0TEeauQp3tc2EEUw"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FBAkqbL2EeacLdvZVzjNfQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FBAkqrL2EeacLdvZVzjNfQ" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_FBAkq7L2EeacLdvZVzjNfQ" name="Anonyme">
+        <generalization xmi:type="uml:Generalization" xmi:id="_FBAkrLL2EeacLdvZVzjNfQ" general="_FBAklrL2EeacLdvZVzjNfQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_FBAkrbL2EeacLdvZVzjNfQ" name="MemorialHephemere">
+        <generalization xmi:type="uml:Generalization" xmi:id="_FBAkrrL2EeacLdvZVzjNfQ">
+          <general xmi:type="uml:Class" href="hyperscenarios-model.uml#_IWfBsLIpEeaRaPqCN0LBgA"/>
+        </generalization>
+        <generalization xmi:type="uml:Generalization" xmi:id="_mJ1voNZuEeayIOSRdu3LuA">
+          <general xmi:type="uml:Class" href="hyperscenarios-model.uml#_FN_F0LVBEeaHEPjhfGK9HQ"/>
+        </generalization>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_FBAkr7L2EeacLdvZVzjNfQ" name="temoignagesSurLeMemorial" type="_FBAkgbL2EeacLdvZVzjNfQ" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FBAksLL2EeacLdvZVzjNfQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FBAksbL2EeacLdvZVzjNfQ" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_FBAksrL2EeacLdvZVzjNfQ" name="lieuCourant" type="_FBAkibL2EeacLdvZVzjNfQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_byB8Y9ZwEeayIOSRdu3LuA" name="temoignagesSurLeMemorial" type="_FBAkgbL2EeacLdvZVzjNfQ" aggregation="composite" association="_byB8YNZwEeayIOSRdu3LuA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dlL8ENZwEeayIOSRdu3LuA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dlNKMNZwEeayIOSRdu3LuA" value="*"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_FBAks7L2EeacLdvZVzjNfQ" name="entreposer">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_FBAktLL2EeacLdvZVzjNfQ" name="temoignages" type="_FBAkgbL2EeacLdvZVzjNfQ"/>
+        </ownedOperation>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_sHMw0NZsEeayIOSRdu3LuA" memberEnd="_sHUFkNZsEeayIOSRdu3LuA _sHUsoNZsEeayIOSRdu3LuA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sHS3cNZsEeayIOSRdu3LuA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sHTegNZsEeayIOSRdu3LuA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_sHUsoNZsEeayIOSRdu3LuA" name="fond" type="_FA_9cbL2EeacLdvZVzjNfQ" association="_sHMw0NZsEeayIOSRdu3LuA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_s2ijENZsEeayIOSRdu3LuA" memberEnd="_s2jKItZsEeayIOSRdu3LuA _s2jKI9ZsEeayIOSRdu3LuA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_s2jKINZsEeayIOSRdu3LuA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_s2jKIdZsEeayIOSRdu3LuA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_s2jKI9ZsEeayIOSRdu3LuA" name="institution" type="_FA_9d7L2EeacLdvZVzjNfQ" association="_s2ijENZsEeayIOSRdu3LuA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xODgcNZtEeayIOSRdu3LuA" memberEnd="_xOEukNZtEeayIOSRdu3LuA _xOEukdZtEeayIOSRdu3LuA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xOEHgNZtEeayIOSRdu3LuA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xOEHgdZtEeayIOSRdu3LuA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_xOEukdZtEeayIOSRdu3LuA" name="archive" type="_FA_9dbL2EeacLdvZVzjNfQ" association="_xODgcNZtEeayIOSRdu3LuA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_4-XwMNZvEeayIOSRdu3LuA" memberEnd="_4-YXQtZvEeayIOSRdu3LuA _4-ZlYNZvEeayIOSRdu3LuA" navigableOwnedEnd="_4-YXQtZvEeayIOSRdu3LuA _4-ZlYNZvEeayIOSRdu3LuA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4-YXQNZvEeayIOSRdu3LuA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4-YXQdZvEeayIOSRdu3LuA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_4-ZlYNZvEeayIOSRdu3LuA" name="temoignagesDansLeLieu" type="_FBAkgbL2EeacLdvZVzjNfQ" aggregation="composite" association="_4-XwMNZvEeayIOSRdu3LuA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_83HjYNZvEeayIOSRdu3LuA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_83IxgNZvEeayIOSRdu3LuA" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_4-YXQtZvEeayIOSRdu3LuA" name="lieu" type="_FBAkibL2EeacLdvZVzjNfQ" association="_4-XwMNZvEeayIOSRdu3LuA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6lA94NZvEeayIOSRdu3LuA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6lCzENZvEeayIOSRdu3LuA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EGRRsNZwEeayIOSRdu3LuA" memberEnd="_EGR4wtZwEeayIOSRdu3LuA _EGSf0NZwEeayIOSRdu3LuA" navigableOwnedEnd="_EGSf0NZwEeayIOSRdu3LuA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EGR4wNZwEeayIOSRdu3LuA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EGR4wdZwEeayIOSRdu3LuA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_EGSf0NZwEeayIOSRdu3LuA" name="lieu" type="_FBAkibL2EeacLdvZVzjNfQ" association="_EGRRsNZwEeayIOSRdu3LuA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JSAWwNZwEeayIOSRdu3LuA" memberEnd="_JSAWw9ZwEeayIOSRdu3LuA _JSAWxNZwEeayIOSRdu3LuA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JSAWwdZwEeayIOSRdu3LuA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JSAWwtZwEeayIOSRdu3LuA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_JSAWxNZwEeayIOSRdu3LuA" name="lieu" type="_FBAkibL2EeacLdvZVzjNfQ" association="_JSAWwNZwEeayIOSRdu3LuA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_TItWINZwEeayIOSRdu3LuA" memberEnd="_TIt9MtZwEeayIOSRdu3LuA _TIt9M9ZwEeayIOSRdu3LuA" navigableOwnedEnd="_TIt9M9ZwEeayIOSRdu3LuA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TIt9MNZwEeayIOSRdu3LuA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TIt9MdZwEeayIOSRdu3LuA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_TIt9M9ZwEeayIOSRdu3LuA" name="citoyen" type="_FBAklrL2EeacLdvZVzjNfQ" association="_TItWINZwEeayIOSRdu3LuA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_byB8YNZwEeayIOSRdu3LuA" memberEnd="_byB8Y9ZwEeayIOSRdu3LuA _byCjcNZwEeayIOSRdu3LuA" navigableOwnedEnd="_byCjcNZwEeayIOSRdu3LuA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_byB8YdZwEeayIOSRdu3LuA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_byB8YtZwEeayIOSRdu3LuA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_byCjcNZwEeayIOSRdu3LuA" name="memorial" type="_FBAkrbL2EeacLdvZVzjNfQ" association="_byB8YNZwEeayIOSRdu3LuA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_k5rdYNZwEeayIOSRdu3LuA" memberEnd="_k5sEcdZwEeayIOSRdu3LuA _k5sEctZwEeayIOSRdu3LuA" navigableOwnedEnd="_k5sEctZwEeayIOSRdu3LuA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_k5rdYdZwEeayIOSRdu3LuA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_k5sEcNZwEeayIOSRdu3LuA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_k5sEctZwEeayIOSRdu3LuA" name="citoyensDansLeLieu" type="_FBAklrL2EeacLdvZVzjNfQ" aggregation="composite" association="_k5rdYNZwEeayIOSRdu3LuA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oxvUENZwEeayIOSRdu3LuA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oxv7INZwEeayIOSRdu3LuA" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_HLwxENZyEeayIOSRdu3LuA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HL0bcNZyEeayIOSRdu3LuA" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HL0bcdZyEeayIOSRdu3LuA" key="Version" value="0.0.19"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HL0bctZyEeayIOSRdu3LuA" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HL0bc9ZyEeayIOSRdu3LuA" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HL0bdNZyEeayIOSRdu3LuA" key="Date" value="2016-11-24"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HL0bddZyEeayIOSRdu3LuA" key="Author" value="Pierre CHATEL"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HLzNUNZyEeayIOSRdu3LuA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="hyperscenarios-profile.profile.uml#_OUgmsLImEeaqv_dN5EUn5g"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="hyperscenarios-profile.profile.uml#_T3ZXUKGaEeab6op2LCrTPA"/>
+    </profileApplication>
+  </uml:Model>
+  <RootElement:Dependance xmi:id="_LJaSYNZyEeayIOSRdu3LuA" base_Property="_FBAkhbL2EeacLdvZVzjNfQ"/>
+  <RootElement:FaitDeclaratif xmi:id="_MGxSgNZyEeayIOSRdu3LuA" base_Property="_FBAkhrL2EeacLdvZVzjNfQ"/>
+  <RootElement:FaitDeclaratif xmi:id="_MtDPYNZyEeayIOSRdu3LuA" base_Property="_FBAkh7L2EeacLdvZVzjNfQ"/>
+  <RootElement:FaitDeclaratif xmi:id="_NWJ2wNZyEeayIOSRdu3LuA" base_Property="_FBAkiLL2EeacLdvZVzjNfQ"/>
+  <RootElement:Dependance xmi:id="_OhkhANZyEeayIOSRdu3LuA" base_Property="_FBAksrL2EeacLdvZVzjNfQ"/>
+  <RootElement:Capacite xmi:id="_PN1KENZyEeayIOSRdu3LuA" base_Operation="_FBAks7L2EeacLdvZVzjNfQ"/>
+  <RootElement:Capacite xmi:id="_QggS4NZyEeayIOSRdu3LuA" base_Operation="_FBAkmbL2EeacLdvZVzjNfQ"/>
+  <RootElement:Action xmi:id="_UUx1wNZyEeayIOSRdu3LuA" base_Operation="_FBAkm7L2EeacLdvZVzjNfQ"/>
+  <RootElement:Action xmi:id="_VAIf4NZyEeayIOSRdu3LuA" base_Operation="_FBAkn7L2EeacLdvZVzjNfQ"/>
+  <RootElement:Action xmi:id="_WBIp4NZyEeayIOSRdu3LuA" base_Operation="_FBAkobL2EeacLdvZVzjNfQ"/>
+  <RootElement:Action xmi:id="_WxoSsNZyEeayIOSRdu3LuA" base_Operation="_FBAko7L2EeacLdvZVzjNfQ"/>
+  <RootElement:Action xmi:id="_XeLPoNZyEeayIOSRdu3LuA" base_Operation="_FBAkpbL2EeacLdvZVzjNfQ"/>
+  <RootElement:Action xmi:id="_YXAVENZyEeayIOSRdu3LuA" base_Operation="_FBAkp7L2EeacLdvZVzjNfQ"/>
+  <RootElement:Capacite xmi:id="_Zep5oNZyEeayIOSRdu3LuA" base_Operation="_FBAklLL2EeacLdvZVzjNfQ"/>
+</xmi:XMI>

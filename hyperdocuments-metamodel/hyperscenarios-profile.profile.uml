@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_T3ZXUKGaEeab6op2LCrTPA" name="RootElement" metaclassReference="_pkPo0KGbEeab6op2LCrTPA _MD_PULCWEeaPytdHkqx5Vw _n-TGoLCtEeaPytdHkqx5Vw _HABc0LCvEeaPytdHkqx5Vw">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-xdNcKGbEeab6op2LCrTPA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_OUgmsLImEeaqv_dN5EUn5g" name="RootElement" nsURI="http:///schemas/RootElement/_OUf_oLImEeaqv_dN5EUn5g/18" nsPrefix="RootElement">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OUhNwLImEeaqv_dN5EUn5g" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OUhNwbImEeaqv_dN5EUn5g" key="Version" value="0.0.19"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OUhNwrImEeaqv_dN5EUn5g" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OUhNw7ImEeaqv_dN5EUn5g" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OUhNxLImEeaqv_dN5EUn5g" key="Date" value="2016-11-24"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OUhNxbImEeaqv_dN5EUn5g" key="Author" value="Pierre CHATEL"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_OUgmsbImEeaqv_dN5EUn5g" name="Capacite" eSuperTypes="_OUgmtLImEeaqv_dN5EUn5g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OUgmsrImEeaqv_dN5EUn5g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yKWX0LCVEeaPytdHkqx5Vw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_OUgmtLImEeaqv_dN5EUn5g" name="FaitProcedural" abstract="true">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OUgmtbImEeaqv_dN5EUn5g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_iIeV4LIlEeaqv_dN5EUn5g"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_OUgmtrImEeaqv_dN5EUn5g" name="base_Operation" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_OUgmuLImEeaqv_dN5EUn5g" name="Action" eSuperTypes="_OUgmtLImEeaqv_dN5EUn5g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OUgmubImEeaqv_dN5EUn5g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_40Q_MLCiEeaPytdHkqx5Vw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_OUgmu7ImEeaqv_dN5EUn5g" name="Dependance">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OUgmvLImEeaqv_dN5EUn5g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_oYjZsLCtEeaPytdHkqx5Vw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_OUgmvbImEeaqv_dN5EUn5g" name="base_Parameter" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Parameter"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_OUgmv7ImEeaqv_dN5EUn5g" name="obligatoire" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_OUgmwbImEeaqv_dN5EUn5g" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_OUgmw7ImEeaqv_dN5EUn5g" name="FaitDeclaratif">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OUgmxLImEeaqv_dN5EUn5g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_X9eW8LIkEeaqv_dN5EUn5g"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_OUgmxbImEeaqv_dN5EUn5g" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_2J75EbIlEeaqv_dN5EUn5g" name="RootElement" nsURI="http:///schemas/RootElement/_2J75ELIlEeaqv_dN5EUn5g/17" nsPrefix="RootElement">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2J8gJLIlEeaqv_dN5EUn5g" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2J8gJbIlEeaqv_dN5EUn5g" key="Version" value="0.0.18"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2J8gJrIlEeaqv_dN5EUn5g" key="Comment" value="&quot;Fait procédural&quot; est abstrait."/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2J8gJ7IlEeaqv_dN5EUn5g" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2J8gKLIlEeaqv_dN5EUn5g" key="Date" value="2016-11-24"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2J8gKbIlEeaqv_dN5EUn5g" key="Author" value="Pierre CHATEL"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2J75ErIlEeaqv_dN5EUn5g" name="Capacite" eSuperTypes="_2J75FbIlEeaqv_dN5EUn5g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2J75E7IlEeaqv_dN5EUn5g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yKWX0LCVEeaPytdHkqx5Vw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2J75FbIlEeaqv_dN5EUn5g" name="FaitProcedural" abstract="true">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2J75FrIlEeaqv_dN5EUn5g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_iIeV4LIlEeaqv_dN5EUn5g"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2J75F7IlEeaqv_dN5EUn5g" name="base_Operation" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2J75GbIlEeaqv_dN5EUn5g" name="Action" eSuperTypes="_2J75FbIlEeaqv_dN5EUn5g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2J75GrIlEeaqv_dN5EUn5g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_40Q_MLCiEeaPytdHkqx5Vw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2J75HLIlEeaqv_dN5EUn5g" name="Dependance">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2J75HbIlEeaqv_dN5EUn5g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_oYjZsLCtEeaPytdHkqx5Vw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2J75HrIlEeaqv_dN5EUn5g" name="base_Parameter" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Parameter"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_2J75ILIlEeaqv_dN5EUn5g" name="obligatoire" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2J75IrIlEeaqv_dN5EUn5g" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2J75JLIlEeaqv_dN5EUn5g" name="FaitDeclaratif">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2J75JbIlEeaqv_dN5EUn5g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_X9eW8LIkEeaqv_dN5EUn5g"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2J75JrIlEeaqv_dN5EUn5g" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_y3zZ8bIlEeaqv_dN5EUn5g" name="RootElement" nsURI="http:///schemas/RootElement/_y3zZ8LIlEeaqv_dN5EUn5g/16" nsPrefix="RootElement">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_y30BBLIlEeaqv_dN5EUn5g" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_y30BBbIlEeaqv_dN5EUn5g" key="Version" value="0.0.17"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_y30BBrIlEeaqv_dN5EUn5g" key="Comment" value="&quot;Action&quot; et &quot;Capacité&quot; sont maintenant des fait procéduraux."/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_y30BB7IlEeaqv_dN5EUn5g" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_y30BCLIlEeaqv_dN5EUn5g" key="Date" value="2016-11-24"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_y30BCbIlEeaqv_dN5EUn5g" key="Author" value="Pierre CHATEL"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_y3zZ8rIlEeaqv_dN5EUn5g" name="Capacite" eSuperTypes="_y3zZ9bIlEeaqv_dN5EUn5g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_y3zZ87IlEeaqv_dN5EUn5g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yKWX0LCVEeaPytdHkqx5Vw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_y3zZ9bIlEeaqv_dN5EUn5g" name="FaitProcedural">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_y3zZ9rIlEeaqv_dN5EUn5g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_iIeV4LIlEeaqv_dN5EUn5g"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_y3zZ97IlEeaqv_dN5EUn5g" name="base_Operation" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_y3zZ-bIlEeaqv_dN5EUn5g" name="Action" eSuperTypes="_y3zZ9bIlEeaqv_dN5EUn5g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_y3zZ-rIlEeaqv_dN5EUn5g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_40Q_MLCiEeaPytdHkqx5Vw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_y3zZ_LIlEeaqv_dN5EUn5g" name="Dependance">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_y3zZ_bIlEeaqv_dN5EUn5g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_oYjZsLCtEeaPytdHkqx5Vw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_y3zZ_rIlEeaqv_dN5EUn5g" name="base_Parameter" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Parameter"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_y3zaALIlEeaqv_dN5EUn5g" name="obligatoire" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_y3zaArIlEeaqv_dN5EUn5g" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_y3zaBLIlEeaqv_dN5EUn5g" name="FaitDeclaratif">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_y3zaBbIlEeaqv_dN5EUn5g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_X9eW8LIkEeaqv_dN5EUn5g"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_y3zaBrIlEeaqv_dN5EUn5g" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_GVCEILIlEeaqv_dN5EUn5g" name="RootElement" nsURI="http:///schemas/RootElement/_GU_A0LIlEeaqv_dN5EUn5g/15" nsPrefix="RootElement">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GVEgYLIlEeaqv_dN5EUn5g" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GVEgYbIlEeaqv_dN5EUn5g" key="Version" value="0.0.16"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GVEgYrIlEeaqv_dN5EUn5g" key="Comment" value="Ajout de la notion de &quot;fait déclaratif&quot;"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GVEgY7IlEeaqv_dN5EUn5g" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GVEgZLIlEeaqv_dN5EUn5g" key="Date" value="2016-11-24"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GVEgZbIlEeaqv_dN5EUn5g" key="Author" value="Pierre CHATEL"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_GVCEIbIlEeaqv_dN5EUn5g" name="Capacite">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GVCEIrIlEeaqv_dN5EUn5g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yKWX0LCVEeaPytdHkqx5Vw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_GVCEI7IlEeaqv_dN5EUn5g" name="base_Operation" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_GVCEJbIlEeaqv_dN5EUn5g" name="Action" eSuperTypes="_GVCEIbIlEeaqv_dN5EUn5g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GVCEJrIlEeaqv_dN5EUn5g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_40Q_MLCiEeaPytdHkqx5Vw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_GVCEKLIlEeaqv_dN5EUn5g" name="Dependance">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GVCEKbIlEeaqv_dN5EUn5g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_oYjZsLCtEeaPytdHkqx5Vw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_GVCEKrIlEeaqv_dN5EUn5g" name="base_Parameter" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Parameter"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_GVCELLIlEeaqv_dN5EUn5g" name="obligatoire" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_GVCELrIlEeaqv_dN5EUn5g" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_GVCEMLIlEeaqv_dN5EUn5g" name="FaitDeclaratif">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GVCEMbIlEeaqv_dN5EUn5g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_X9eW8LIkEeaqv_dN5EUn5g"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_GVCEMrIlEeaqv_dN5EUn5g" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_QKohgLDLEeaPytdHkqx5Vw" name="RootElement" nsURI="http:///schemas/RootElement/_QKn6cLDLEeaPytdHkqx5Vw/14" nsPrefix="RootElement">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QKohk7DLEeaPytdHkqx5Vw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QKohlLDLEeaPytdHkqx5Vw" key="Version" value="0.0.15"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QKohlbDLEeaPytdHkqx5Vw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QKohlrDLEeaPytdHkqx5Vw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QKohl7DLEeaPytdHkqx5Vw" key="Date" value="2016-11-22"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QKohmLDLEeaPytdHkqx5Vw" key="Author" value="Pierre CHATEL"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_QKohgbDLEeaPytdHkqx5Vw" name="Capacite">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QKohgrDLEeaPytdHkqx5Vw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yKWX0LCVEeaPytdHkqx5Vw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_QKohg7DLEeaPytdHkqx5Vw" name="base_Operation" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_QKohhbDLEeaPytdHkqx5Vw" name="Action" eSuperTypes="_QKohgbDLEeaPytdHkqx5Vw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QKohhrDLEeaPytdHkqx5Vw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_40Q_MLCiEeaPytdHkqx5Vw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_QKohiLDLEeaPytdHkqx5Vw" name="Dependance">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QKohibDLEeaPytdHkqx5Vw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_oYjZsLCtEeaPytdHkqx5Vw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_QKohirDLEeaPytdHkqx5Vw" name="base_Parameter" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Parameter"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QKohjLDLEeaPytdHkqx5Vw" name="obligatoire" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_QKohjrDLEeaPytdHkqx5Vw" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_dVI18bC1EeaPytdHkqx5Vw" name="RootElement" nsURI="http:///schemas/RootElement/_dVI18LC1EeaPytdHkqx5Vw/13" nsPrefix="RootElement">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dVJdA7C1EeaPytdHkqx5Vw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dVJdBLC1EeaPytdHkqx5Vw" key="Version" value="0.0.14"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dVJdBbC1EeaPytdHkqx5Vw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dVJdBrC1EeaPytdHkqx5Vw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dVJdB7C1EeaPytdHkqx5Vw" key="Date" value="2016-11-22"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dVJdCLC1EeaPytdHkqx5Vw" key="Author" value="Pierre CHATEL"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_dVI18rC1EeaPytdHkqx5Vw" name="Capacite">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dVI187C1EeaPytdHkqx5Vw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yKWX0LCVEeaPytdHkqx5Vw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_dVI19LC1EeaPytdHkqx5Vw" name="base_Operation" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_dVI19rC1EeaPytdHkqx5Vw" name="Action" eSuperTypes="_dVI18rC1EeaPytdHkqx5Vw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dVI197C1EeaPytdHkqx5Vw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_40Q_MLCiEeaPytdHkqx5Vw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_dVI1-bC1EeaPytdHkqx5Vw" name="Dependance">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dVI1-rC1EeaPytdHkqx5Vw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_oYjZsLCtEeaPytdHkqx5Vw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_dVI1-7C1EeaPytdHkqx5Vw" name="base_Parameter" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Parameter"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_dVI1_bC1EeaPytdHkqx5Vw" name="obligatoire" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_dVI1_7C1EeaPytdHkqx5Vw" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_OPYXwbC1EeaPytdHkqx5Vw" name="RootElement" nsURI="http:///schemas/RootElement/_OPYXwLC1EeaPytdHkqx5Vw/12" nsPrefix="RootElement">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OPpdgrC1EeaPytdHkqx5Vw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OPpdg7C1EeaPytdHkqx5Vw" key="Version" value="0.0.13"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OPpdhLC1EeaPytdHkqx5Vw" key="Comment" value="Retrait de l'association comme dépendance."/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OPpdhbC1EeaPytdHkqx5Vw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OPpdhrC1EeaPytdHkqx5Vw" key="Date" value="2016-11-22"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OPpdh7C1EeaPytdHkqx5Vw" key="Author" value="Pierre CHATEL"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_OPYXwrC1EeaPytdHkqx5Vw" name="Capacite">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OPYXw7C1EeaPytdHkqx5Vw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yKWX0LCVEeaPytdHkqx5Vw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_OPYXxLC1EeaPytdHkqx5Vw" name="base_Operation" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_OPYXxrC1EeaPytdHkqx5Vw" name="Action" eSuperTypes="_OPYXwrC1EeaPytdHkqx5Vw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OPYXx7C1EeaPytdHkqx5Vw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_40Q_MLCiEeaPytdHkqx5Vw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_OPYXybC1EeaPytdHkqx5Vw" name="Dependance">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OPYXyrC1EeaPytdHkqx5Vw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_oYjZsLCtEeaPytdHkqx5Vw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_OPYXy7C1EeaPytdHkqx5Vw" name="base_Parameter" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Parameter"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_OPYXzbC1EeaPytdHkqx5Vw" name="obligatoire" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_OPYXz7C1EeaPytdHkqx5Vw" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_Il18YLC1EeaPytdHkqx5Vw" name="RootElement" nsURI="http:///schemas/RootElement/_Il1VULC1EeaPytdHkqx5Vw/11" nsPrefix="RootElement">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Il3KhLC1EeaPytdHkqx5Vw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Il3KhbC1EeaPytdHkqx5Vw" key="Version" value="0.0.12"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Il3KhrC1EeaPytdHkqx5Vw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Il3Kh7C1EeaPytdHkqx5Vw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Il3KiLC1EeaPytdHkqx5Vw" key="Date" value="2016-11-22"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Il3KibC1EeaPytdHkqx5Vw" key="Author" value="Pierre CHATEL"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_Il18YbC1EeaPytdHkqx5Vw" name="Capacite">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Il18YrC1EeaPytdHkqx5Vw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yKWX0LCVEeaPytdHkqx5Vw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Il18Y7C1EeaPytdHkqx5Vw" name="base_Operation" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_Il18ZbC1EeaPytdHkqx5Vw" name="Action" eSuperTypes="_Il18YbC1EeaPytdHkqx5Vw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Il18ZrC1EeaPytdHkqx5Vw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_40Q_MLCiEeaPytdHkqx5Vw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_Il18aLC1EeaPytdHkqx5Vw" name="Dependance">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Il18abC1EeaPytdHkqx5Vw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_oYjZsLCtEeaPytdHkqx5Vw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Il18arC1EeaPytdHkqx5Vw" name="base_Parameter" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Parameter"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_Il18bLC1EeaPytdHkqx5Vw" name="obligatoire" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Il18brC1EeaPytdHkqx5Vw" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Il18cLC1EeaPytdHkqx5Vw" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_Z41ZELCzEeaPytdHkqx5Vw" name="RootElement" nsURI="http:///schemas/RootElement/_Z40yALCzEeaPytdHkqx5Vw/10" nsPrefix="RootElement">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Z42AIbCzEeaPytdHkqx5Vw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Z42AIrCzEeaPytdHkqx5Vw" key="Version" value="0.0.11"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Z42AI7CzEeaPytdHkqx5Vw" key="Comment" value="L'association peut maintenant aussi être une dépendance."/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Z42AJLCzEeaPytdHkqx5Vw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Z42AJbCzEeaPytdHkqx5Vw" key="Date" value="2016-11-22"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Z42AJrCzEeaPytdHkqx5Vw" key="Author" value="Pierre CHATEL"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_Z41ZEbCzEeaPytdHkqx5Vw" name="Capacite">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Z41ZErCzEeaPytdHkqx5Vw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yKWX0LCVEeaPytdHkqx5Vw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Z41ZE7CzEeaPytdHkqx5Vw" name="base_Operation" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_Z41ZFbCzEeaPytdHkqx5Vw" name="Action" eSuperTypes="_Z41ZEbCzEeaPytdHkqx5Vw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Z41ZFrCzEeaPytdHkqx5Vw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_40Q_MLCiEeaPytdHkqx5Vw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_Z41ZGLCzEeaPytdHkqx5Vw" name="Dependance">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Z41ZGbCzEeaPytdHkqx5Vw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_oYjZsLCtEeaPytdHkqx5Vw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Z41ZGrCzEeaPytdHkqx5Vw" name="base_Parameter" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Parameter"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_Z41ZHLCzEeaPytdHkqx5Vw" name="obligatoire" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Z41ZHrCzEeaPytdHkqx5Vw" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Z41ZILCzEeaPytdHkqx5Vw" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_p_c0IbCvEeaPytdHkqx5Vw" name="RootElement" nsURI="http:///schemas/RootElement/_p_c0ILCvEeaPytdHkqx5Vw/9" nsPrefix="RootElement">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_p_dbMLCvEeaPytdHkqx5Vw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_p_dbMbCvEeaPytdHkqx5Vw" key="Version" value="0.0.10"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_p_dbMrCvEeaPytdHkqx5Vw" key="Comment" value="Une propriété peut maintenant aussi être une dépendance"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_p_dbM7CvEeaPytdHkqx5Vw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_p_dbNLCvEeaPytdHkqx5Vw" key="Date" value="2016-11-22"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_p_dbNbCvEeaPytdHkqx5Vw" key="Author" value="Pierre CHATEL"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_p_c0IrCvEeaPytdHkqx5Vw" name="Capacite">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_p_c0I7CvEeaPytdHkqx5Vw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yKWX0LCVEeaPytdHkqx5Vw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_p_c0JLCvEeaPytdHkqx5Vw" name="base_Operation" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_p_c0JrCvEeaPytdHkqx5Vw" name="Action" eSuperTypes="_p_c0IrCvEeaPytdHkqx5Vw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_p_c0J7CvEeaPytdHkqx5Vw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_40Q_MLCiEeaPytdHkqx5Vw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_p_c0KbCvEeaPytdHkqx5Vw" name="Dependance">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_p_c0KrCvEeaPytdHkqx5Vw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_oYjZsLCtEeaPytdHkqx5Vw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_p_c0K7CvEeaPytdHkqx5Vw" name="base_Parameter" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Parameter"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_p_c0LbCvEeaPytdHkqx5Vw" name="obligatoire" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_p_c0L7CvEeaPytdHkqx5Vw" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_GpclULCuEeaPytdHkqx5Vw" name="RootElement" nsURI="http:///schemas/RootElement/_GpaJELCuEeaPytdHkqx5Vw/8" nsPrefix="RootElement">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GpclYLCuEeaPytdHkqx5Vw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GpclYbCuEeaPytdHkqx5Vw" key="Version" value="0.0.9"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GpclYrCuEeaPytdHkqx5Vw" key="Comment" value="Ajout concept de &quot;Dependance&quot;"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GpclY7CuEeaPytdHkqx5Vw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GpclZLCuEeaPytdHkqx5Vw" key="Date" value="2016-11-22"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GpclZbCuEeaPytdHkqx5Vw" key="Author" value="Pierre CHATEL"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_GpclUbCuEeaPytdHkqx5Vw" name="Capacite">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GpclUrCuEeaPytdHkqx5Vw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yKWX0LCVEeaPytdHkqx5Vw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_GpclU7CuEeaPytdHkqx5Vw" name="base_Operation" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_GpclVbCuEeaPytdHkqx5Vw" name="Action" eSuperTypes="_GpclUbCuEeaPytdHkqx5Vw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GpclVrCuEeaPytdHkqx5Vw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_40Q_MLCiEeaPytdHkqx5Vw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_GpclWLCuEeaPytdHkqx5Vw" name="Dependance">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GpclWbCuEeaPytdHkqx5Vw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_oYjZsLCtEeaPytdHkqx5Vw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_GpclWrCuEeaPytdHkqx5Vw" name="base_Parameter" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Parameter"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_GpclXLCuEeaPytdHkqx5Vw" name="obligatoire" ordered="false" lowerBound="1" defaultValueLiteral="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_tTOIcLCjEeaPytdHkqx5Vw" name="RootElement" nsURI="http:///schemas/RootElement/_tTNhYLCjEeaPytdHkqx5Vw/7" nsPrefix="RootElement">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tTOvgbCjEeaPytdHkqx5Vw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tTOvgrCjEeaPytdHkqx5Vw" key="Version" value="0.0.8"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tTOvg7CjEeaPytdHkqx5Vw" key="Comment" value="L'action est maintenant définie comme un type particulier de capacité."/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tTOvhLCjEeaPytdHkqx5Vw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tTOvhbCjEeaPytdHkqx5Vw" key="Date" value="2016-11-22"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tTOvhrCjEeaPytdHkqx5Vw" key="Author" value="Pierre CHATEL"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_tTOIcbCjEeaPytdHkqx5Vw" name="Capacite">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tTOIcrCjEeaPytdHkqx5Vw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yKWX0LCVEeaPytdHkqx5Vw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_tTOIc7CjEeaPytdHkqx5Vw" name="base_Operation" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_tTOIdbCjEeaPytdHkqx5Vw" name="Action" eSuperTypes="_tTOIcbCjEeaPytdHkqx5Vw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tTOIdrCjEeaPytdHkqx5Vw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_40Q_MLCiEeaPytdHkqx5Vw"/>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_-Rs4QbCiEeaPytdHkqx5Vw" name="RootElement" nsURI="http:///schemas/RootElement/_-Rs4QLCiEeaPytdHkqx5Vw/6" nsPrefix="RootElement">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-RtfUrCiEeaPytdHkqx5Vw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-RtfU7CiEeaPytdHkqx5Vw" key="Version" value="0.0.7"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-RtfVLCiEeaPytdHkqx5Vw" key="Comment" value="Ajout de la notion d'&quot;action&quot;"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-RtfVbCiEeaPytdHkqx5Vw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-RtfVrCiEeaPytdHkqx5Vw" key="Date" value="2016-11-22"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-RtfV7CiEeaPytdHkqx5Vw" key="Author" value="Pierre CHATEL"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_-Rs4QrCiEeaPytdHkqx5Vw" name="Capacite">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-Rs4Q7CiEeaPytdHkqx5Vw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yKWX0LCVEeaPytdHkqx5Vw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_-Rs4RLCiEeaPytdHkqx5Vw" name="base_Operation" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_-Rs4RrCiEeaPytdHkqx5Vw" name="Action">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-Rs4R7CiEeaPytdHkqx5Vw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_40Q_MLCiEeaPytdHkqx5Vw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_-Rs4SLCiEeaPytdHkqx5Vw" name="base_Operation" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_RhwfkLCWEeaPytdHkqx5Vw" name="RootElement" nsURI="http:///schemas/RootElement/_RhuqYLCWEeaPytdHkqx5Vw/5" nsPrefix="RootElement">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RhyUwbCWEeaPytdHkqx5Vw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RhyUwrCWEeaPytdHkqx5Vw" key="Version" value="0.0.6"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RhyUw7CWEeaPytdHkqx5Vw" key="Comment" value="ajout de la notion de &quot;capacité&quot;"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RhyUxLCWEeaPytdHkqx5Vw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RhyUxbCWEeaPytdHkqx5Vw" key="Date" value="2016-11-22"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RhyUxrCWEeaPytdHkqx5Vw" key="Author" value="Pierre CHATEL"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_RhwfkbCWEeaPytdHkqx5Vw" name="Capacite">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RhwfkrCWEeaPytdHkqx5Vw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yKWX0LCVEeaPytdHkqx5Vw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Rhwfk7CWEeaPytdHkqx5Vw" name="base_Operation" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Operation"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_rM2hMaGiEeab6op2LCrTPA" name="RootElement" nsURI="http:///schemas/RootElement/_rM2hMKGiEeab6op2LCrTPA/4" nsPrefix="RootElement">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rM3IQKGiEeab6op2LCrTPA" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rM3IQaGiEeab6op2LCrTPA" key="Version" value="0.0.5"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rM3IQqGiEeab6op2LCrTPA" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rM3IQ6GiEeab6op2LCrTPA" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rM3IRKGiEeab6op2LCrTPA" key="Date" value="2016-11-03"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rM3IRaGiEeab6op2LCrTPA" key="Author" value="Pierre CHATEL"/>
+      </eAnnotations>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_K16rkaGhEeab6op2LCrTPA" name="RootElement" nsURI="http:///schemas/RootElement/_K16rkKGhEeab6op2LCrTPA/3" nsPrefix="RootElement">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_K16rkqGhEeab6op2LCrTPA" source="http://www.eclipse.org/uml2/4.1.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_K175sKGhEeab6op2LCrTPA" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_K175saGhEeab6op2LCrTPA" key="Version" value="0.0.4"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_K175sqGhEeab6op2LCrTPA" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_K175s6GhEeab6op2LCrTPA" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_K175tKGhEeab6op2LCrTPA" key="Date" value="2016-11-03"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_K175taGhEeab6op2LCrTPA" key="Author" value="Pierre CHATEL"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_K16rk6GhEeab6op2LCrTPA" name="InstanceOf">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_K16rlKGhEeab6op2LCrTPA" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_K16rlaGhEeab6op2LCrTPA" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_K16rl6GhEeab6op2LCrTPA" name="type" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFm3jqEdy8S4Cr8Rc_NA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_K16rmaGhEeab6op2LCrTPA" name="instances" ordered="false" upperBound="-1" containment="true">
+          <eType xmi:type="ecore:EClass" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFm3jqEdy8S4Cr8Rc_NA"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_93itcaGcEeab6op2LCrTPA" name="RootElement" nsURI="http:///schemas/RootElement/_93itcKGcEeab6op2LCrTPA/2" nsPrefix="RootElement">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_93jUg6GcEeab6op2LCrTPA" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_93jUhKGcEeab6op2LCrTPA" key="Version" value="0.0.3"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_93jUhaGcEeab6op2LCrTPA" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_93jUhqGcEeab6op2LCrTPA" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_93jUh6GcEeab6op2LCrTPA" key="Date" value="2016-11-03"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_93jUiKGcEeab6op2LCrTPA" key="Author" value="Pierre CHATEL"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_93itcqGcEeab6op2LCrTPA" name="InstanceOf">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_93itc6GcEeab6op2LCrTPA" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_93itdKGcEeab6op2LCrTPA" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_93itdqGcEeab6op2LCrTPA" name="classifier" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_93iteKGcEeab6op2LCrTPA" name="instances" ordered="false" upperBound="-1" containment="true">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_wSd-4KGcEeab6op2LCrTPA" name="RootElement" nsURI="http:///schemas/RootElement/_wSbioKGcEeab6op2LCrTPA/1" nsPrefix="RootElement">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wSfNAaGcEeab6op2LCrTPA" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wSfNAqGcEeab6op2LCrTPA" key="Version" value="0.0.2"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wSfNA6GcEeab6op2LCrTPA" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wSfNBKGcEeab6op2LCrTPA" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wSfNBaGcEeab6op2LCrTPA" key="Date" value="2016-11-03"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wSfNBqGcEeab6op2LCrTPA" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_wSd-4aGcEeab6op2LCrTPA" name="InstanceOf">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wSd-4qGcEeab6op2LCrTPA" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_wSd-46GcEeab6op2LCrTPA" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_wSd-5aGcEeab6op2LCrTPA" name="classifier" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_wSd-56GcEeab6op2LCrTPA" name="instances" ordered="false" upperBound="-1" containment="true">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_-xdNcaGbEeab6op2LCrTPA" name="RootElement" nsURI="http:///schemas/RootElement/_-xaxMKGbEeab6op2LCrTPA/0" nsPrefix="RootElement">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-xgQwKGbEeab6op2LCrTPA" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-xgQwaGbEeab6op2LCrTPA" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-xgQwqGbEeab6op2LCrTPA" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-xgQw6GbEeab6op2LCrTPA" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-xgQxKGbEeab6op2LCrTPA" key="Date" value="2016-11-03"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-xgQxaGbEeab6op2LCrTPA" key="Author" value="Pierre CHATEL"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_-xdNcqGbEeab6op2LCrTPA" name="InstanceOf">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-xdNc6GbEeab6op2LCrTPA" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_-xdNdKGbEeab6op2LCrTPA" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_pkPo0KGbEeab6op2LCrTPA" alias="Association">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Association"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_MD_PULCWEeaPytdHkqx5Vw" alias="Operation">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_n-TGoLCtEeaPytdHkqx5Vw" alias="Parameter">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Parameter"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_HABc0LCvEeaPytdHkqx5Vw" alias="Property">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_yKWX0LCVEeaPytdHkqx5Vw" name="Capacite">
+    <generalization xmi:type="uml:Generalization" xmi:id="_ns9SILIlEeaqv_dN5EUn5g" general="_iIeV4LIlEeaqv_dN5EUn5g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_40Q_MLCiEeaPytdHkqx5Vw" name="Action">
+    <generalization xmi:type="uml:Generalization" xmi:id="_fJJPYLCjEeaPytdHkqx5Vw" general="_iIeV4LIlEeaqv_dN5EUn5g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_oYjZsLCtEeaPytdHkqx5Vw" name="Dependance">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qJ0jALCtEeaPytdHkqx5Vw" name="base_Parameter" association="_qJzU4LCtEeaPytdHkqx5Vw">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Parameter"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_309dULCtEeaPytdHkqx5Vw" name="obligatoire">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+      <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_BTDIYLCuEeaPytdHkqx5Vw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ljqlULCvEeaPytdHkqx5Vw" name="base_Property" association="_ljpXMLCvEeaPytdHkqx5Vw">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_qJzU4LCtEeaPytdHkqx5Vw" name="E_Dependance_Parameter1" memberEnd="_qJz78LCtEeaPytdHkqx5Vw _qJ0jALCtEeaPytdHkqx5Vw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_qJz78LCtEeaPytdHkqx5Vw" name="extension_Dependance" type="_oYjZsLCtEeaPytdHkqx5Vw" aggregation="composite" association="_qJzU4LCtEeaPytdHkqx5Vw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_ljpXMLCvEeaPytdHkqx5Vw" name="E_Dependance_Property1" memberEnd="_ljp-QLCvEeaPytdHkqx5Vw _ljqlULCvEeaPytdHkqx5Vw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_ljp-QLCvEeaPytdHkqx5Vw" name="extension_Dependance" type="_oYjZsLCtEeaPytdHkqx5Vw" aggregation="composite" association="_ljpXMLCvEeaPytdHkqx5Vw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_X9eW8LIkEeaqv_dN5EUn5g" name="FaitDeclaratif">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_eVMuALIkEeaqv_dN5EUn5g" name="base_Property" association="_eVKRwLIkEeaqv_dN5EUn5g">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_eVKRwLIkEeaqv_dN5EUn5g" name="E_FaitDeclaratif_Property1" memberEnd="_eVMG8LIkEeaqv_dN5EUn5g _eVMuALIkEeaqv_dN5EUn5g">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_eVMG8LIkEeaqv_dN5EUn5g" name="extension_FaitDeclaratif" type="_X9eW8LIkEeaqv_dN5EUn5g" aggregation="composite" association="_eVKRwLIkEeaqv_dN5EUn5g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_iIeV4LIlEeaqv_dN5EUn5g" name="FaitProcedural" isAbstract="true">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_pBW5QLIlEeaqv_dN5EUn5g" name="base_Operation" association="_pBVrILIlEeaqv_dN5EUn5g">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Operation"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_pBVrILIlEeaqv_dN5EUn5g" name="E_FaitProcedural_Operation1" memberEnd="_pBWSMLIlEeaqv_dN5EUn5g _pBW5QLIlEeaqv_dN5EUn5g">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_pBWSMLIlEeaqv_dN5EUn5g" name="extension_FaitProcedural" type="_iIeV4LIlEeaqv_dN5EUn5g" aggregation="composite" association="_pBVrILIlEeaqv_dN5EUn5g"/>
+  </packagedElement>
+</uml:Profile>
