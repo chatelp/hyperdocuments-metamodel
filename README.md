@@ -1,4 +1,4 @@
-#Une approche hypermédia pour la valorisation auprès du grand public de données patrimoniales numériques
+# Une approche hypermédia pour la valorisation auprès du grand public de données patrimoniales numériques
 
 ***A hypermedia approach for digital heritage data promotion to the general public*** 
 
